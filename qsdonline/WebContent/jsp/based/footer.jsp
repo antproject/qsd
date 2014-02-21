@@ -41,9 +41,9 @@ li{
 		<td class="paddingLeft50">
 			<span><s:text name="footer.dlaklienta"/></span>
 			<ol class="paddingTop10">
-				<li><a href="<s:url action='client/clientstable.html'/>"><s:text name="footer.kartapodarunkowa"/></a></li>
-				<li><a href="<s:url action='#'/>"><s:text name="footer.kartapodarunkowa"/></a></li>
-				<li><a href="<s:url action='#'/>"><s:text name="footer.bony"/></a></li>
+				<li><a href="<s:url action='clients/clientstable.html'/>"><s:text name="footer.kartapodarunkowa"/></a></li>
+				<li><a href="<s:url action='clients/clientgift.html'/>"><s:text name="footer.kartapodarunkowa"/></a></li>
+				<li><a href="<s:url action='clients/clientbon.html'/>"><s:text name="footer.bony"/></a></li>
 			</ol>
 		</td>
 		<td class="paddingLeft50">
