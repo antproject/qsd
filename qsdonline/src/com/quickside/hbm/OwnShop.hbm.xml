@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-01-21 20:53:49 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="pl.quickside.ownshop.BO.OwnShopBO" table="own_shop" catalog="qsd">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="wojKod" type="char">
+            <column name="woj_kod" length="1" not-null="true">
+                <comment>kod woj</comment>
+            </column>
+        </property>
+        <property name="miasto" type="string">
+            <column name="miasto" length="100" not-null="true">
+                <comment>miasto</comment>
+            </column>
+        </property>
+        <property name="kodPocztowy" type="string">
+            <column name="`kod pocztowy`" length="6" not-null="true">
+                <comment>kod pocztowy</comment>
+            </column>
+        </property>
+        <property name="ulica" type="string">
+            <column name="ulica" length="100" not-null="true">
+                <comment>ulica i numer domu</comment>
+            </column>
+        </property>
+        <property name="rodzaj" type="string">
+            <column name="rodzaj" length="100" not-null="true">
+                <comment>rodzaj sklepu</comment>
+            </column>
+        </property>
+        <property name="dodInf" type="string">
+            <column name="dod_inf" length="255" not-null="true">
+                <comment>dodatkowe informacje</comment>
+            </column>
+        </property>
+        <property name="godzOtw" type="string">
+            <column name="godz_otw" length="255">
+                <comment>godziny otwarcia</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

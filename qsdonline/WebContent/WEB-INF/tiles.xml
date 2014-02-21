@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<!-- definicja bazowa konstrukcji strony WWW -->
+	<!-- Sekcja se sliderem -->
+	<definition name="baseLayout" template="/jsp/based/baseLayout.jsp">
+		<put-attribute name="title" value="Quickside Poland" />
+		<put-attribute name="menu" value="/jsp/based/menu.jsp" />
+		<put-attribute name="slider" value="/jsp/based/slider.jsp" />
+		<put-attribute name="body" value="/jsp/based/body.jsp" />
+		<put-attribute name="footer" value="/jsp/based/footer.jsp" />
+	</definition>
+	<definition name="welcome" extends="baseLayout">
+		<put-attribute name="body" value="/jsp/based/qsdstart.jsp" />
+	</definition>
+
+	<!-- Sekcja bez slidera -->
+	<!-- definicja bazowa dla stron bez slidera -->
+	<definition name="baseLayout2" template="/jsp/based2/baseLayout2.jsp">
+		<put-attribute name="title" value="QuickSide Poland"/>
+		<put-attribute name="menu" value="/jsp/based2/menu2.jsp" />
+		<put-attribute name="body" value="/jsp/based2/body.jsp" />
+		<put-attribute name="footer" value="/jsp/based2/footer2.jsp" />
+	</definition>
+	<definition name="collect" extends="baseLayout2">
+		<put-attribute name="title" value="QuickSide Poland - Kolekcja"/>
+		<put-attribute name="body" value="/jsp/collect/collect.jsp"></put-attribute>
+	</definition>
+	<definition name="collectmen" extends="baseLayout2">
+		<put-attribute name="title" value="QuickSide Poland - Kolekcja Męska"/>
+		<put-attribute name="body" value="/jsp/collect/collectmentype.jsp"></put-attribute>
+	</definition>
+	<definition name="collectwomen" extends="baseLayout2">
+		<put-attribute name="title" value="QuickSide Poland - Kolekcja Damska"/>
+		<put-attribute name="body" value="/jsp/collect/collectwomentype.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="collectlist" extends="baseLayout2">
+		<put-attribute name="title" value="QuickSide Poland - Kolekcja"/>
+		<put-attribute name="body" value="/jsp/collect/collectlist.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="collectdetails" extends="baseLayout2">
+		<put-attribute name="title" value="QuickSide Poland - Kolekcja Męska - Szczegóły produktu"/>
+		<put-attribute name="body" value="/jsp/collect/collectdetails.jsp"></put-attribute>
+	</definition>
+	
+	
+	<!-- nasze sklepy -->
+	<definition name="ownshop" extends="baseLayout2">
+		<put-attribute name="title" value="QuickSide Poland - Nasze Sklepy"/>
+		<put-attribute name="body" value="/jsp/ownshop/ownshop.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="shopDetails" extends="baseLayout2">
+		<put-attribute name="title" value="QuickSide Poland - Nasze Sklepy"/>
+		<put-attribute name="body" value="/jsp/ownshop/shopDetails.jsp"></put-attribute>
+	</definition>
+	
+	<!-- o nas -->
+	<definition name="aboutus" extends="baseLayout2">
+		<put-attribute name="title" value="QuickSide Poland - O Nas"/>
+		<put-attribute name="body" value="/jsp/aboutus/aboutus.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="filozofia" extends="baseLayout2">
+		<put-attribute name="title" value="QuickSide Poland - Filozofia Marki"/>
+		<put-attribute name="body" value="/jsp/aboutus/filozofia.jsp"></put-attribute>
+	</definition>
+	<definition name="franczyza" extends="baseLayout2">
+		<put-attribute name="title" value="QuickSide Poland - Franczyza"/>
+		<put-attribute name="body" value="/jsp/aboutus/franczyza.jsp"></put-attribute>
+	</definition>
+	<definition name="kariera" extends="baseLayout2">
+		<put-attribute name="title" value="QuickSide Poland - Kariera"/>
+		<put-attribute name="body" value="/jsp/aboutus/kariera.jsp"></put-attribute>
+	</definition>
+	
+	<!-- współpraca -->
+	<definition name="cooperation" extends="baseLayout2">
+		<put-attribute name="title" value="QuickSide Poland - Współpraca"/>
+		<put-attribute name="body" value="/jsp/cooperation/cooperation.jsp"></put-attribute>
+	</definition>
+	<!-- kontakt -->
+	<definition name="contact" extends="baseLayout2">
+		<put-attribute name="title" value="QuickSide Poland - Kontakt"/>
+		<put-attribute name="body" value="/jsp/contact/contact.jsp"></put-attribute>
+	</definition>
+	<definition name="contactforms" extends="baseLayout2">
+		<put-attribute name="title" value="QuickSide Poland - Formularz Kontaktowy"/>
+		<put-attribute name="body" value="/jsp/contact/contactforms.jsp"></put-attribute>
+	</definition>
+	
+	<!-- news -->
+	<definition name="news" extends="baseLayout2">
+		<put-attribute name="title" value="QuickSide Poland - News"/>
+		<put-attribute name="body" value="/jsp/news/news.jsp"></put-attribute>
+	</definition>
+	<!-- klient -->
+	<definition name="clientstable" extends="baseLayout2">
+		<put-attribute name="title" value="QuickSide Poland - Karta Stałego Klienta"/>
+		<put-attribute name="body" value="/jsp/client/clientstable.jsp"></put-attribute>
+	</definition>
+	<definition name="clientgift" extends="baseLayout2">
+		<put-attribute name="title" value="QuickSide Poland - Karta Podarunkowa"/>
+		<put-attribute name="body" value="/jsp/client/clientgift.jsp"></put-attribute>
+	</definition>
+	<definition name="clientbon" extends="baseLayout2">
+		<put-attribute name="title" value="QuickSide Poland - Bony Rabatowe"/>
+		<put-attribute name="body" value="/jsp/client/clientbon.jsp"></put-attribute>
+	</definition>
+	
+	
+	
+</tiles-definitions>

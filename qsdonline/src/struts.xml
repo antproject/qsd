@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+<constant name="struts.action.extension" value="html"/>
+<constant name="struts.custom.i18n.resources" value="messages"/>
+<constant name="struts.mapper.alwaysSelectFullNamespace" value="true" />	
+	
+	
+	<package name="default" extends="struts-default" namespace="/">
+		
+		
+		<result-types>
+			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>
+	</package>
+	
+	<package name="start" extends="default" namespace="/">
+		<result-types>
+			<result-type name="imageResult" class="pl.quickside.action.CustomPhotoResult" />
+			<result-type name="imageResult2" class="pl.quickside.collect.action.CustomLargePhotoResult" />
+			<result-type name="imageResult3" class="pl.quickside.collect.action.PhotoResultAktualnosci" />
+		
+		</result-types>
+		<action name="index" class="pl.quickside.action.WelcomeAction">
+			<result name="success" type="tiles">welcome</result>
+		</action>
+		<action name="showmenwomen" class="pl.quickside.action.WelcomeAction" method="showPhoto">
+			<result name="success" type="imageResult"/>
+		</action>
+		<action name="photoclothes" class="pl.quickside.collect.action.CollectAction" method="getPhotoClothes">
+			<result name="success" type="imageResult2"/>
+		</action>
+		<action name="showPhotoAktual" class="pl.quickside.action.WelcomeAction" method="showPhotoAktual">
+			<result name="success" type="imageResult3"/>
+		</action>
+		
+	</package>
+	
+	<package name="cooperation" extends="default" namespace="/cooperation">
+		<action name="cooperation" class="pl.quickside.action.EmptyAction">
+			<result name="success" type="tiles">cooperation</result>
+		</action>
+	</package>
+	
+	<package name="contact" extends="default" namespace="/contact">
+		<action name="contact" class="pl.quickside.action.EmptyAction">
+			<result name="success" type="tiles">contact</result>
+		</action>
+		<action name="contactforms" class="pl.quickside.action.EmptyAction">
+			<result name="success" type="tiles">contactforms</result>
+		</action>
+		
+	</package>
+	
+	<package name="news" extends="default" namespace="/news">
+		<result-types>
+			<result-type name="imageResult3" class="pl.quickside.collect.action.PhotoResultAktualnosci" />
+		</result-types>
+		<action name="news" class="pl.quickside.action.NewsAction">
+			<result name="success" type="tiles">news</result>
+		</action>
+		<action name="showPhotoAktual" class="pl.quickside.action.WelcomeAction" method="showPhotoAktual">
+			<result name="success" type="imageResult3"/>
+		</action>
+	</package>
+	
+	
+	<package name="clients" extends="default" namespace="/clients">
+		<action name="clientstable" class="pl.quickside.action.EmptyAction">
+			<result name="success" type="tiles">clientstable</result>
+		</action>
+		<action name="clientgift" class="pl.quickside.action.EmptyAction">
+			<result name="success" type="tiles">clientgift</result>
+		</action>
+		<action name="clientbon" class="pl.quickside.action.EmptyAction">
+			<result name="success" type="tiles">clientbon</result>
+		</action>
+	</package>
+	
+	
+	<include file="struts-shop.xml" />
+	<include file="struts-collect.xml" />
+	<include file="struts-abouts.xml" />
+</struts>

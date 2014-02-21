@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-01-30 19:37:27 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="pl.quickside.collect.BO.CollectBO" table="collect" catalog="qsd">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="idKod" type="string">
+            <column name="id_kod" length="10" not-null="true">
+                <comment>kod ubrania</comment>
+            </column>
+        </property>
+        <property name="kodUbrania" type="string">
+            <column name="kod_ubrania" length="3" not-null="true">
+                <comment>krotki kod ubrania</comment>
+            </column>
+        </property>
+        <property name="nazwaPrd" type="string">
+            <column name="nazwa_prd" length="100" not-null="true">
+                <comment>pelna nazwa</comment>
+            </column>
+        </property>
+        <property name="images" type="binary">
+            <column name="images" not-null="true">
+                <comment>duzo foto</comment>
+            </column>
+        </property>
+        <property name="small" type="binary">
+            <column name="small">
+                <comment>small foto</comment>
+            </column>
+        </property>
+        <property name="thumb" type="binary">
+            <column name="thumb">
+                <comment>thumb foto</comment>
+            </column>
+        </property>
+        <property name="opis" type="string">
+            <column name="opis" length="65535">
+                <comment>opis</comment>
+            </column>
+        </property>
+        <property name="dodOpis" type="string">
+            <column name="dod_opis" length="65535">
+                <comment>dotkowy opis</comment>
+            </column>
+        </property>
+        <property name="warSprz" type="string">
+            <column name="war_sprz" length="65535">
+                <comment>warunki sprzedazy</comment>
+            </column>
+        </property>
+        <property name="rozmiar" type="string">
+            <column name="rozmiar" not-null="true">
+                <comment>rozmiar</comment>
+            </column>
+        </property>
+        <property name="praniePhoto" type="binary">
+            <column name="pranie_photo" >
+                <comment>foto pranie</comment>
+            </column>
+        </property>
+        <property name="skladUbrania" type="string">
+            <column name="sklad_ubrania" not-null="true">
+                <comment>sklad ubrania</comment>
+            </column>
+        </property>
+        <property name="kolor" type="string">
+            <column name="kolor" not-null="true">
+                <comment>kolor ubrania</comment>
+            </column>
+        </property>
+        <property name="prdTyg" type="char">
+            <column name="prd_tyg" length="1" not-null="true">
+                <comment>produkt tygodnia</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

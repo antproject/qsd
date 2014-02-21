@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	
+	<package name="Kolekcja" extends="default" namespace="/collect">
+		<result-types>
+			<result-type name="imageResult" class="pl.quickside.collect.action.CustomLargePhotoResult" />
+			<result-type name="imageSmallResult" class="pl.quickside.collect.action.CustomSmallPhotoResult"/>
+			<result-type name="imageThumbResult" class="pl.quickside.collect.action.CustomThumbPhotoResult"/>
+		</result-types>
+		
+		
+		
+		<action name="collection" class="pl.quickside.action.EmptyAction">
+			<result name="success" type="tiles">collect</result>
+		</action>
+		<action name="collectmen" class="pl.quickside.action.EmptyAction">
+			<result name="success" type="tiles">collectmen</result>
+		</action>
+		<action name="collectwomen" class="pl.quickside.action.EmptyAction">
+			<result name="success" type="tiles">collectwomen</result>
+		</action>
+		<action name="collectlist" class="pl.quickside.collect.action.CollectAction">
+			<result name="success" type="tiles">collectlist</result>
+		</action>
+		<action name="photoclothes" class="pl.quickside.collect.action.CollectAction" method="getPhotoClothes">
+			<result name="success" type="imageResult"/>
+		</action>
+		<action name="photominclothes" class="pl.quickside.collect.action.CollectAction" method="getPhotoClothes">
+			<result name="success" type="imageSmallResult"/>
+		</action>
+		
+		<action name="photoThumbClothes" class="pl.quickside.collect.action.CollectAction" method="getPhotoClothes">
+			<result name="success" type="imageThumbResult"/>
+		</action>
+		
+		<action name="collectdetails" class="pl.quickside.collect.action.CollectAction" method="getPhotoDetails">
+			<result name="success" type="tiles">collectdetails</result>
+		</action>		
+	</package>	
+</struts>

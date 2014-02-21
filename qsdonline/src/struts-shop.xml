@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="shop" extends="default" namespace="/shop">
+		<action name="ownshop" class="pl.quickside.action.EmptyAction">
+			<result name="success" type="tiles">ownshop</result>
+		</action>
+		<action name="shopDetails" class="pl.quickside.ownshop.action.OwnShopAction" method="getShowDetails">
+			<result name="success" type="tiles">shopDetails</result>
+		</action>
+	</package>
+</struts>

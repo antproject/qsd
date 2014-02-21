@@ -1,0 +1,1 @@
+<img alt="" src="img/Quickside-lyout-wer-03-kolejna-1_05.jpg" width="1096px"/>

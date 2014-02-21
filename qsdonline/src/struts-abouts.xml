@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	
+<package name="aboutus" extends="default" namespace="/aboutus">
+		<action name="aboutus" class="pl.quickside.action.EmptyAction">
+			<result name="success" type="tiles">aboutus</result>
+		</action>
+		<action name="filozofia" class="pl.quickside.action.EmptyAction">
+			<result name="success" type="tiles">filozofia</result>
+		</action>
+		<action name="franczyza" class="pl.quickside.action.EmptyAction">
+			<result name="success" type="tiles">franczyza</result>
+		</action>
+		<action name="kariera" class="pl.quickside.action.EmptyAction">
+			<result name="success" type="tiles">kariera</result>
+		</action>
+		
+	</package>
+
+</struts>

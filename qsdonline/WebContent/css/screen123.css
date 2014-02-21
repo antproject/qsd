@@ -1,0 +1,190 @@
+body{
+background: black;
+font-family:  ''Abril Fatface', Arial;
+
+}
+a,a:HOVER,a:LINK,a:VISITED{
+text-decoration: none;
+color: white;
+}
+#ALLPAGES {
+	overflow: hidden;
+	margin: 0 auto;
+	z-index: 30;
+}
+
+#LEFT {
+	
+	float: left;
+	width: 120px;
+}
+#CENTER{
+	float: left;
+	background: black;
+	z-index: 20;
+}
+#RIGHT{
+	float: left;
+	width: 50px;
+}
+#MENU{
+	background-color: black;
+	position: relative;
+	z-index: 9;
+	height: 170px;
+	opacity: 0.9;
+}
+#FOOTER{
+	color: white;
+	width:1023px;
+	margin: 0 auto;
+}
+#BODY{
+	color: black;
+	background: url("../img/Quickside-lyout-wer-03-kolejna-1_09.jpg") repeat scroll 0 0 / 1023px auto rgba(0, 0, 0, 0);
+    margin: 0 auto;
+    position: relative;
+    top: -3px;
+    width: 1023px;
+}
+
+.titleStyle{
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: bold;
+}
+.promocjeStyle{
+	font-weight: bold;
+	font-size: 24px;
+	color: blue;
+	
+}
+p{
+	margin: 0;
+}
+.linksHome{
+	color: white;
+	position: absolute;
+	top: 122px;
+}
+.width805{
+	width: 805px;
+}
+.width604{
+	width: 604px;
+}
+.photolist{
+	width: 250px;
+	height: 250px;
+}
+.photolist2{
+	width: 250px;
+	height: 370px;
+}
+
+.linksKolekcja{
+	color: white;
+	position: absolute;
+	top: 122px;
+	margin-left: 60px;
+}
+.fontStyleLinks{
+	font-size: 15px;
+	padding-right: 10px;
+	color: white;
+	white-space: nowrap;
+}
+.menuStyle{
+	padding-top: 80px;
+	vertical-align: middle;
+}
+
+.paddingLeft40{
+	padding-left: 40px;
+}
+.collectMenStyle{
+	font-size: 25px;
+	font-weight: bold;
+}
+.collectMenTypeStyle{
+	font-family:  'Abril Fatface', Arial;
+	font-weight: bold;
+	padding-top: 5px;
+	letter-spacing: 1px;
+}
+.dupa{
+	 float: right;
+    position: relative;
+    top: -102px;
+    font-size: 14px;
+    left: 40px;
+}
+
+.wielkoscfoto{
+	width: 70px;
+	height: 152px;
+}
+#right-links {
+    position: fixed;
+    right: 0;
+    top: 170px;
+    width: 70px;
+    z-index: 100;
+}
+.photoWidthHeigth{
+	width: 270px;
+	height: 270px;
+}
+.alignCenter{
+	text-align: center;
+}
+.floatLeft{
+	float: left;
+}
+.floatRight{
+	float: right;
+}
+.width400{
+	width: 400px;
+}
+.paddingBottom20{
+	padding-bottom: 20px;
+}
+.paddingBottom150{
+	padding-bottom: 150px;
+}
+.contactStyle{
+	width: 400px;
+	font-size: 20px;
+	font-weight: normal;
+}
+.alignLeft{
+	text-align: left;
+}
+#poliester,	#bawelna, #polyamid, #elastan, #welna, #wiskoza{
+	color: blue;
+	font: italic;
+}
+#mainmenu, #mainmenu ul {list-style: none; margin: 0; padding: 0;}
+#mainmenu ul {width: 160px;}
+#mainmenu ul li {clear: both;}
+#mainmenu > li {float: left;position: relative;}
+#mainmenu > li li {position: relative;}
+#mainmenu > li ul {position: absolute; left: 0;}
+#mainmenu > li ul li ul {position: absolute; left: 160px; top: 0px;}
+ul ul {display: none;}
+ul li:hover > ul {display: block;}
+
+/*POZIOM 1*/
+#mainmenu {position:relative;top: -54px;left:340px;font-family:'Abril Fatface'; tahoma, arial;font-size: 18px;}
+#mainmenu > li > a {display: table; width: auto;padding-right: 20px; text-align: center; text-decoration: none; color: white;}
+
+
+/*POZIOMY NI�SZE*/
+#mainmenu ul {font-size: 12px; border-radius: 3px; background: black;}
+#mainmenu ul li > a {color: white; display: block; padding: 5px; border-radius: 3px; text-decoration: none;}
+#mainmenu ul li:hover > a {color: red; background: black;}
+
+.arrow {display: inline-block; margin: 0 5px 0; height: 0; vertical-align: top; content: ""; position: absolute;}
+#mainmenu > li > a > .arrow {top: 17px; right: 0; margin-right: -8px; border-top: 3px solid #333; border-right: 3px solid transparent; border-left: 3px solid transparent;}
+ul ul .arrow {top: 10px; right: 0; border-top: 3px solid transparent; border-right: 3px solid transparent; border-left: 3px solid #333; border-bottom: 3px solid transparent;}
