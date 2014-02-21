@@ -67,7 +67,7 @@ li{
 				<li><a href="<s:url action='#'/>"><s:text name="footer.formularz"/></a></li>
 				<li><a href="<s:url action='shop/ownshop.html'/>"><s:text name="footer.naszesklepy"/></a></li>
 			</ol>
-		</td>
+		</td> 
 	</tr>
 </table>
 </div>
